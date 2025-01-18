@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif; /* Moderne et lisible */
+  background-color: #121212; /* Couleur de fond sombre pour le confort visuel */
+  color: #e0e0e0; /* Texte clair pour le contraste */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Occupe toute la hauteur de l'écran */
+}
+
+/* Wrapper Styles */
+.Wrapper {
+  background-color: #1e1e1e; /* Légèrement plus clair que le body */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Ombre subtile pour un effet moderne */
+  padding: 2rem;
+  max-width: 600px; /* Largeur maximale */
+  width: 90%; /* Réactif pour les petits écrans */
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.Wrapper:hover {
+  transform: scale(1.02); /* Léger effet de zoom au survol */
+}
+
+/* Text Styles */
+#text {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #ffffff; /* Couleur principale pour les citations */
+}
+
+#author {
+  font-size: 1rem;
+  font-style: italic;
+  margin-bottom: 2rem;
+  color: #b0b0b0; /* Texte secondaire pour l'auteur */
+}
+
+/* Flex container for buttons */
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem; /* Espace entre les boutons */
+  margin-top: 1rem;
+}
+
+/* Button Styles */
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Link Styles for Tweet button */
+#tweet-quote {
+  padding: 0.8rem 1.5rem;
+  background-color: #1da1f2;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#tweet-quote:hover {
+  background-color: #0d8ce0;
+}
+
+/* Icon Styles for Twitter */
+#tweet-quote i {
+  margin-right: 0.5rem; /* Ajoute de l'espace entre l'icône et le texte */
+  font-size: 1.2rem; /* Ajuste la taille de l'icône */
+  vertical-align: middle; /* Aligne l'icône avec le texte */
+}
